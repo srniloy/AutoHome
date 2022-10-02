@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+  <TextView
+      android:id="@+id/app_name_signin"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="80dp"
+      android:text="AutoHome"
+      android:textColor="@color/purple_700"
+      android:textSize="50sp" />
+
+  <EditText
+      android:id="@+id/email_address_signin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="30dp"
+      android:ems="10"
+      android:hint="Email"
+      android:layout_marginTop="80dp"
+      android:layout_below="@+id/app_name_signin"
+      android:inputType="textEmailAddress" />
+
+
+  <EditText
+      android:id="@+id/password_signin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/email_address_signin"
+      android:layout_marginHorizontal="30dp"
+      android:ems="10"
+      android:layout_marginTop="20dp"
+      android:hint="Password"
+      android:inputType="textPassword" />
+
+  <Button
+      android:id="@+id/signin_button_signin"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/password_signin"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="30dp"
+      android:paddingHorizontal="30dp"
+      android:text="Sign in" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/signin_button_signin"
+      android:paddingHorizontal="30dp"
+      android:textAlignment="center"
+      android:layout_marginTop="20dp"
+      android:text="If you don't have an account then click 'SIGN UP' button to create one" />
+
+  <Button
+      android:id="@+id/signup_button_signin"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:backgroundTint="@color/blue"
+      android:paddingHorizontal="30dp"
+      android:text="Sign up" />
+
+
+</RelativeLayout>
